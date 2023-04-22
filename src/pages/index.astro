@@ -1,12 +1,12 @@
 ---
 // Component Imports
 
-import Button from '../components/Button.astro';
-import '../pages/main.css'
-import Error from "../pages/Errors/no-wifi.astro"
-import Banned from "../pages/Errors/banned.astro"
-import DevMode from "../pages/Errors/development.astro"
+import Button from '#components/Button.astro';
+import Error from "#pages/Errors/no-wifi.astro"
+import Banned from "#pages/Errors/banned.astro"
+import DevMode from "#pages/Errors/development.astro"
 const actualVersion = "23.0.4"
+import '#styles/main.css'
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -35,15 +35,15 @@ const actualVersion = "23.0.4"
 
 		<!--///// ERROR  /////-->
 
-    <Error />
+    <DevMode />
 		
 
 	<!--///// Updating Screen  /////-->
 
-  <main id="updatingScreen" class="flex gap-4 justify-center flex-col items-center full-screen !hidden">
+  <main id="updatingScreen" class="flex gap-4 justify-center flex-col items-center full-screen">
 	   <h1 class="font-bold font-PP text-2xl text-center">Software Update</h1>
 
-     <progress class="max-h-1" id="file" max="100" value="80"> 70% </progress
+     <progress class="max-h-1" id="file" max="100" value="80"> 70% </progress>
 	</main>
 
 	  <small class="absolute bottom-7 font-MT text-zinc-600">Version: <b>{actualVersion}</b></small>

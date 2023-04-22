@@ -3,9 +3,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "#styles/*": ["styles/*"],
-      "#layouts/*": ["layouts/*"],
-      "#errors/*": ["pages/errors/*"],
+      "#pages/*": ["src/pages/*"],
+      "#styles/*": ["src/styles/*"],
+      "#layouts/*": ["src/layouts/*"],
+      "#errors/*": ["src/pages/errors/*"],
+      "#components/*": ["src/components/*"],
     }
   }
 }
